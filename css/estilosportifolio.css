@@ -29,11 +29,14 @@ header img{
     
 }
 header{
+    margin-top: 0;
     box-sizing: border-box;
-    position: relative;
+    position: fixed;
     left: 5px;
     /* border: 5px dashed white; */
-    width: 800px;
+    width: 1320px;
+    z-index: 4;
+    background-color: black;
 }
 header h1{
     width: 400px;
