@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: #111820;
+    display: grid;
+    
+    grid-template-areas:  
+    "header"
+    "principal"
+    "footer";
+    grid-template-rows: 12vh 800px 90px; 
+}
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    border-radius: 10px;
+    }
+body .principal{
+    justify-self: center;
+    padding-top: 30px;
+}
+header{
+    background-color: #576574;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+    border-radius: 10px;
+    box-shadow: 0px 10px 5px 0px #000000;
+    box-sizing: unset;
+    
+    z-index: 4;
+}
+header h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin-left: 290px;
+}
+header nav ul{
+    display: flex;
+    margin-right: 20px;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+    color: white;
+    padding: 10px;
+    
+}
+header nav ul li a:hover{
+    padding: 10px;
+    color: aqua;
+    background-color: #222f3e;
+    border-radius: 5px;
+}
+.principal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    grid-area: principal;
+    width: 1200px;
+    height: 800px;
+    /* max-height: 1130.25px; */
+    overflow-y: auto;
+    background-color: #222f3e;
+
+    
+
+}
+.principal::-webkit-scrollbar {
+    display: none;
+    }
+.principal main{
+
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    
+    
+}
+.principal main article{
+    padding: 20px;
+}
+.principal h3, .principal img{
+    padding: 15px;
+}
+.principal main article img{
+    width: 700px;
+}
+footer{
+    grid-area: footer;
+}
+.ver-mais{
+    display: block;
+    
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+    align-self: center;
+}
+.ver-mais a:hover{
+    background-color: #222f3e;
+    color: aqua;
+    width: 200px;
+    padding: 5px;
+
+}
+.ver-mais a{
+    background-color: #576574;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    
+
+}
+.logo{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    text-align: center;
+    padding: 2px;
+    font-size: 35px;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+}
+#contatos{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+#contatos h3{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#contatos .contatos li{
+    text-align: center;
+
+    
+}
+#contatos .contatos li a img{
+    width: 45px;
+    padding: 5px;
+
+}
+#contatos .contatos li a:hover{
+    color: aqua;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+}
+
