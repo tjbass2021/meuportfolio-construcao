@@ -1,4 +1,4 @@
-# Construção do meu Portifólio
+# Construção do meu Portfólio
 ---
 
 Estou construíndo o site para o meu portifólio já aplicando o pouco que 
