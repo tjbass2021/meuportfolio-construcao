@@ -121,6 +121,7 @@ header nav ul li a:hover{
     color: white;
     text-align: center;
     padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 #contatos p{
     font-size: 10px;
@@ -143,7 +144,7 @@ header nav ul li a:hover{
 
 }
 #contatos .contatos li a:hover{
-    color: aqua;
+    
     width: 10px;
     height: 10px;
     padding: 5px;
