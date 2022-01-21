@@ -17,13 +17,15 @@ header{
     color: white;
     
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: center;
     padding: 5px;
     /* border-bottom: 3px dashed white; */
     font-family: Roboto;
-    font-size: 150%;
+    font-size: 100%;
+    position: fixed;
+    top: 0;
 }
 
 header img{
@@ -51,9 +53,38 @@ header nav ul li a:hover{
 
 /*Principal*/
 
+.principal{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-items: center;
+    align-items: baseline;
+}
+
+.sobre{
+    align-self:stretch;
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: white;
+    height: 600px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 100px 10px;
+    padding: 10px;
+    
+
+}
+.sobre img{
+    width: 100px;
+    border-radius: 100%;
+}
+
 .container{
+    /* align-self: baseline; */
     width: 90%;
-    margin: 50px auto;
+    margin: 100px 10px;
     border: 1px solid grey;
     
     
@@ -168,3 +199,102 @@ body::-webkit-scrollbar {
     border: 1.5px solid rgb(0, 0, 0);  
     /*creates padding around scroll thumb */
   }
+
+
+@media (max-width: 515px){
+
+    header nav ul li a{
+        margin-top: 10px;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        font-size: 90%;
+
+    }
+
+   .principal{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+    .sobre{
+    align-self:stretch;
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    color: white;
+    height: 600px;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    
+
+}
+   .sobre img{
+    width: 100px;
+    border-radius: 100%;
+}
+
+    .container{
+    /* align-self: baseline; */
+    width: 90%;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid grey;
+    
+    
+    display: flex;
+    flex-flow: row wrap;
+    /*nunca usar align-item no container, pois vai distorcer o objetivo do alinhamento entre as caixas caso alguma possua mais conteúdo que as outras*/
+    justify-content: center;
+    
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-color: black;
+    border-radius: 20px;
+    
+
+}
+  }
+
+@media (max-width: 434px){
+    header{
+        width: 100%;
+        background-color: black;
+        color: white;
+        
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        /* border-bottom: 3px dashed white; */
+        font-family: Roboto;
+        font-size: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    header nav ul li a{
+        margin-top: 10px;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+        font-size: 90%;
+
+    }
+}
