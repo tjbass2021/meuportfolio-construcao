@@ -11,15 +11,25 @@
 
 <body>
     <header>
-        <!-- <img width="100px" src="img/eu.jpg" alt=""> -->
-        <h1>Projetos</h1>
-        <!-- <h3>Portfólio de Projetos</h3> -->
-        <nav>
+        <img id="icon" onclick="submenu()" src="img/menu-button_icon-icons.com_72989.svg" alt="">
+
+        <nav id="oculto">
             <ul type="none">
-                <li><a href="">Home</a></li>
-                <li><a href="">Projetos</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#sobre">SOBRE MIM</a></li>
+                <li><a href="#contatos">CONTATO</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Projetos</h1>
+        
+        <nav id="menu">
+            <ul type="none">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#sobre">Sobre mim</a></li>
-                <li><a href="#contatos">Contatos</a></li>
+                <li><a href="#contatos">Contato</a></li>
                 
             </ul>
         </nav>
@@ -27,7 +37,7 @@
     
     <div class="principal">
 
-        <main class="container">
+        <main class="container" id="projetos">
             
             <article class="card">
                 
@@ -72,21 +82,48 @@
             </article> -->
             
         </main>
+        <section id="sobre">
+
+            <div class="caixa1">
+                <img src="img/eu.jpg" alt="Foto de Thiago Jonas" title="Thiago Jonas">
+
+                <div class="info">
+                    <h3>Thiago Jonas</h3>
+                    <ul type="none">
+                        <li><span>Nascimento: </span>11/09/1994</li>
+                        <li><span>Naturalidade: </span>Brasileiro</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="habilidades">
+                <h3>Habilidades:</h3>
+                <ul type="none">
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+            </div>
+
+        </section>
     </div>
 
     <footer id="contatos">
-        <h3>Contatos</h3>
+        <h3>Contato</h3>
         <nav class="contatos">
             <ul type="none">
                 <li>
-                    <a href=""><img src="img/github.png" alt="GitHub"></a>
-                    <a href=""><img src="img/linkedin.png" alt="LinkedIn"></a>
-                    <a href=""><img src="img/instagram.png" alt="Instagram"></a>
+                    <a href=""><img src="img/github.svg" alt="GitHub"></a>
+                    <a href=""><img src="img/linkedin.svg" alt="LinkedIn"></a>
+                    <a href=""><img src="img/Instagram.svg" alt="Instagram"></a>
                 </li>
             </ul>
         </nav>
         <p>Desenvolvido por Thiago Jonas</p>
     </footer>
+
+    <script src="scripts/responsive-menu.js"></script>
     
 </body>
 </html>
