@@ -50,7 +50,8 @@ header nav ul li a{
 header nav ul li a:hover{
     padding: 10px;
     border-radius: 5px;
-    background: linear-gradient(to top left, #0066ff 0%, #ff99ff 100%);
+    
+    background-color: #1fa6cc;
 }
 
 /*Principal*/
@@ -80,7 +81,8 @@ header nav ul li a:hover{
     padding-top: 30px;
     padding-bottom: 30px;
 
-    background-color: black;
+    /* background-color: black; */
+    background-color: #1d2936;
     border-radius: 20px;
     
     box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
@@ -103,7 +105,8 @@ header nav ul li a:hover{
     font-family: roboto;
 }
 .card footer a{
-    background: linear-gradient(to top left, #0066ff 0%, #ff99ff 100%);
+    /* background: linear-gradient(to top left, #0066ff 0%, #ff99ff 100%); */
+    background-color: #1fa6cc;
     padding: 7px;
     border-radius: 7px;
     color: white;
@@ -179,7 +182,7 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-thumb {
-    background: linear-gradient(to top left, #0066ff 0%, #ff99ff 100%);
+    background-color: #1d2936;
     /* background-color: #222f3e;    color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 1.5px solid rgb(0, 0, 0);  
