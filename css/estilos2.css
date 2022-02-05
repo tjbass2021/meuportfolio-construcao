@@ -77,6 +77,38 @@ header #menu ul li a:active{
 -moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 
 }
+
+/*BACKGROUND TOPO*/
+
+#foto{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background: no-repeat center url(../img/software-developer-g0da093a20_1920.jpg);
+
+    box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+
+  border-bottom: 5px solid #1fa6cc;
+    
+    
+    
+}
+
+.secundario{
+    text-align: end;
+    width: 70%;
+    color: white;
+    background-color: black;
+    opacity: 95%;
+    
+    
+}
+
 /*Principal*/
 
 .principal{
@@ -99,8 +131,10 @@ header #menu ul li a:active{
     padding-top: 30px;
     padding-bottom: 30px;
 
-    /* background-color: black; */
-    background-color: #1d2936;
+    background-color: black;
+    /* background-color: #1d2936; */
+
+    border-bottom: 5px solid #1fa6cc;
 
     
     box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
@@ -110,7 +144,11 @@ header #menu ul li a:active{
 }
 .card{
     /* width: 90%; */
-    background-color: rgb(7, 7, 12);
+    /* background-color: rgb(7, 7, 12); */
+
+    background-color: #0d1218;
+
+
     border-radius: 10px;
     margin: 10px;
 
@@ -121,6 +159,15 @@ header #menu ul li a:active{
     color: white;
     text-align: center;
     font-family: roboto;
+
+    border-bottom: 5px solid #1fa6cc;
+}
+
+.card:hover{
+    border-top: 3px solid lightblue;
+    border-right: 3px solid lightblue;
+    border-left: 3px solid lightblue;
+    border-bottom: 5px solid lightblue;
 }
 .card footer a{
     /* background: linear-gradient(to top left, #0066ff 0%, #ff99ff 100%); */
@@ -132,6 +179,7 @@ header #menu ul li a:active{
 }
 .card footer a:hover{
     padding: 10px;
+    
 }
 .card footer a:active{
     background-color: aqua;
@@ -151,6 +199,8 @@ header #menu ul li a:active{
     padding: 10px;
 }
 .card img{
+    margin-bottom: 5px;
+    border-radius: 10px 10px 0 0;
     width: 100%;
     padding: 15px auto;
 
@@ -165,9 +215,12 @@ header #menu ul li a:active{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: #1d2936;
+    /* background-color: #1d2936; */
+    background-color: black;
     width: 100%;
     margin: 0 auto;
+
+    border-bottom: 5px solid #1fa6cc;
     
     box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
@@ -308,7 +361,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #1d2936;
+    /* background-color: #1d2936; */
     
     
 
@@ -341,6 +394,11 @@ body::-webkit-scrollbar {
         font-size: 100%;
         position: fixed;
         top: 0;
+        z-index: 10;
+    }
+
+    #foto{
+        margin-top: 70px;
     }
 
     #titulo{
@@ -374,7 +432,7 @@ body::-webkit-scrollbar {
     .container{
         width: 100%;
         margin-bottom: 5px;
-        margin-top: 70px;
+        margin-top: 5px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -384,7 +442,7 @@ body::-webkit-scrollbar {
         padding-top: 30px;
         padding-bottom: 30px;
     
-        background-color: #1d2936;
+        /* background-color: #1d2936; */
         
         
     
