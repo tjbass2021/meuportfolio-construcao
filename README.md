@@ -20,11 +20,13 @@ projetos com links que levarão a página do respectivo projeto com maiores expl
 
 ![sobre](img/portfolio3.png)
 
-![footer](img/portfolio4.png)
+
 
 ## Responsividade
 
 O site possui responsividade e um menu oculto lateral acionado por um botão do lado esquerdo.
+
+![imagem0](img/portfolio4.png)
 
 ![imagem](img/portfolio5.png)
 
