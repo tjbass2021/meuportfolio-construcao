@@ -5,133 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Projetos</title>
-    <!-- <link rel="stylesheet" href="css/estilos.css"> -->
-    <link rel="stylesheet" href="css/estilos2.css">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .hover:hover{
+            background-color: #50fa7b;
+            color:black !important;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+    
 </head>
 
-<body>
-    <header>
-        <img id="icon" onclick="submenu()" src="img/menu-button_icon-icons.com_72989.svg" alt="">
-        <h1 id="titulo">Projetos</h1>
-
-        <nav id="oculto">
-            <ul type="none">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
-                <li><a href="#sobre">SOBRE MIM</a></li>
-                <li><a href="#contatos">CONTATO</a></li>
-            </ul>
-        </nav>
-        
-        <h1>Projetos</h1>
-        
-        <nav id="menu">
-            <ul type="none">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#projetos">PROJETOS</a></li>
-                <li><a href="#sobre">SOBRE</a></li>
-                <li><a href="#contatos">CONTATO</a></li>
-                
-            </ul>
-        </nav>
+<body class="bg-black">
+    <header id="cabeca">
+        <h1 class="titulo text-green-dracula">Projetos</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active text-green-dracula hover" aria-current="page" href="#topo">Home</a>
+                  <a class="nav-link text-green-dracula hover" href="#sobre">Sobre</a>
+                  <a class="nav-link text-green-dracula hover" href="#projetos">Projetos</a>
+                  <a class="nav-link text-green-dracula hover" href="#contatos">Contato</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-    
-    <div class="principal">
 
-        <div id="foto">
-            <div class="secundario">
-                <blockquote>O programador no fundo é um artista.</blockquote>
-                <p> - <span>Thiago Jonas</span></p>
+    <div id="topo" class="principal">
+
+        <div class="foto">
+            <div class="secundario bg-black p-4 w-50 fst-italic">
+                <blockquote class="bg-black text-green-dracula text-break">"Todo programador no fundo é um artista,
+                    um poeta, que tem como seus versos
+                    os códigos que escreve."</blockquote>
+                <p class="text-green-dracula text-end"> - <span class="text=green-dracula">Thiago Jonas</span></p>
             </div>
         </div>
 
-        <main class="container" id="projetos">
+        <h2 id="sobre"class="text-center m-4 text-green-dracula" >SOBRE</h2>
+
+        <section class="sobre shadow p-3 mb-5 bg-black rounded mt-3 d-flex flex-row flex-wrap justify-content-center w-100">
+
             
-            <article class="card">
+            <div class="card bg-black d-flex m-4 caixa1" style="width: 18rem;">
+                <img class="card-image-top rounded-circle align-self-center mt-3 mb-3" src="img/eu.jpg" alt="Foto de Thiago Jonas" title="Thiago Jonas" width="100px">
+
+                <div class="info card-body d-flex flex-column align-items-start bg-black text-green-dracula">
+                    <h3 class="mt-1 ms-3">Thiago Jonas</h3>
+                    
+                        <p class="card-text ms-3 lh-1">Nascimento: </span>11/09/1994
+                        </p>
+                        <p class="card-text ms-3 lh-1"><span>Naturalidade: </span>Brasileiro</p>
+                </div>
+            </div>
+
+            
+            <div class="card bg-black m-4 text-green-dracula habilidades" style="width: 18rem;">
+                <h3 class="ms-4 mt-3">Habilidades:</h3>
+                    <p class="ms-4">
+                        HTML <br>
+                        CSS <br>
+                        JavaScript <br>
+                        Bootstrap <br>
+                    </p>
+            </div>
+
+        </section>
+
+        <h3 id="projetos" class="text-green-dracula text-center m-4">PROJETOS</h3>
+
+        <main class="d-flex flex-row flex-wrap justify-content-center projetos">
+            <article class="card bg-black text-green-dracula card-border m-4" style="width: 18rem;">
                 
-                <img src="img/Captura de tela de 2022-02-03 21-49-02.png" alt="">
-                <h3>Card de Apresentação</h3>
+                <img class="card-image-top cartao" src="img/card-de-apresentacao.png">
+                <h3 class="card-title m-3">Card de Apresentação</h3>
                 
-                <div class="conteudo">
+                <div class="conteudo card-text m-3">
                     <p>Card simples, organizador de links para apresentação.</p>
                     
 
                 </div>
 
-                <footer class="ver-mais"><a href="">VER MAIS</a></footer>
+                <a class="btn btn-primary"href="">VER MAIS</a>
+
+                
             </article>
-            
-            <!-- <article class="card">
+
+            <article class="card bg-black text-green-dracula card-border m-4" style="width: 18rem;">
                 
-                <img src="img/home.png" alt="">
-                <h3>Site de produções literárias e visuais</h3>
+                <img class="card-image-top cartao" src="img/card-de-apresentacao.png">
+                <h3 class="card-title m-3">Card de Apresentação</h3>
                 
-                <div class="conteudo">
-                    <p>Descrição</p>
+                <div class="conteudo card-text m-3">
+                    <p>Card simples, organizador de links para apresentação.</p>
                     
 
                 </div>
 
-                <footer class="ver-mais"><a href="">VER MAIS</a></footer>
-            </article> -->
-            
-            <!-- <article class="card">
+                <a class="btn btn-primary"href="">VER MAIS</a>
+
                 
-                <img src="img/home.png" alt="">
-                <h3>Site de produções literárias e visuais</h3>
+            </article>
+
+            <article class="card bg-black text-green-dracula card-border m-4" style="width: 18rem;">
                 
-                <div class="conteudo">
-                    <p>Descrição</p>
+                <img class="card-image-top cartao" src="img/card-de-apresentacao.png">
+                <h3 class="card-title m-3">Card de Apresentação</h3>
+                
+                <div class="conteudo card-text m-3">
+                    <p>Card simples, organizador de links para apresentação.</p>
                     
 
                 </div>
 
-                <footer class="ver-mais"><a href="">VER MAIS</a></footer>
-            </article> -->
-            
+                <a class="btn btn-primary"href="">VER MAIS</a>
+
+                
+            </article>
         </main>
-        <section id="sobre">
 
-            <div class="caixa1">
-                <img src="img/eu.jpg" alt="Foto de Thiago Jonas" title="Thiago Jonas">
-
-                <div class="info">
-                    <h3>Thiago Jonas</h3>
-                    <ul type="none">
-                        <li><span>Nascimento: </span>11/09/1994</li>
-                        <li><span>Naturalidade: </span>Brasileiro</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="habilidades">
-                <h3>Habilidades:</h3>
+        <footer id="contatos">
+            <h3 class="text-green-dracula">CONTATO</h3>
+            <nav class="contatos">
                 <ul type="none">
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>JavaScript</li>
+                    <li><a href="https://github.com/tjbass2021" target="_blank"><img src="img/github.svg" alt="GitHub"></a></li>
+                    
+                    <li><a href="https://www.linkedin.com/in/thiago-jonas-nascimento-de-souza-006874119/" target="_blank"><img src="img/linkedin.svg" alt="LinkedIn"></a></li>
+                    
+                    <li><a href="https://www.instagram.com/thiago_okan/" target="_blank"><img src="img/Instagram.svg" alt="Instagram"></a></li>
+                    
                 </ul>
-            </div>
+            </nav>
+            <p class="text-green-dracula">Desenvolvido por Thiago Jonas</p>
+        </footer>
 
-        </section>
     </div>
+    
+    
 
-    <footer id="contatos">
-        <h3>Contato</h3>
-        <nav class="contatos">
-            <ul type="none">
-                <li><a href="https://github.com/tjbass2021"><img src="img/github.svg" alt="GitHub"></a></li>
-                <p> tjbass2021</p>
-                <li><a href="https://www.linkedin.com/in/thiago-jonas-nascimento-de-souza-006874119/"><img src="img/linkedin.svg" alt="LinkedIn"></a></li>
-                <p>LinkedIn</p>
-                <li><a href="https://www.instagram.com/thiago_okan/"><img src="img/Instagram.svg" alt="Instagram"></a></li>
-                <p>@thiago_okan</p>
-            </ul>
-        </nav>
-        <p>Desenvolvido por Thiago Jonas</p>
-    </footer>
-
-    <script src="scripts/responsive-menu.js"></script>
+    
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/jquery-v3.6.0min.js"></script>
     
 </body>
 </html>

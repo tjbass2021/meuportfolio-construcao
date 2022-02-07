@@ -1,0 +1,149 @@
+body{
+    background-color: #44475a;
+}
+
+#cabeca{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    border-bottom: 5px solid #50fa7b;
+    z-index: 10;
+
+    box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* .hover:hover{
+    background-color: #50fa7b;
+    color:black;
+    padding: 5px; */
+
+
+.foto{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background: no-repeat center url(../img/software-developer-g0da093a20_1920.jpg);
+
+    box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 10px 5px 0px rgba(0,0,0,0.75);
+
+  border-bottom: 5px solid #50fa7b;
+}
+
+.sobre{
+    background-color: #282a36;
+    color: white;
+    border-bottom: 5px solid #50fa7b;
+}
+
+.projetos{
+    border-bottom: 5px solid #50fa7b;
+}
+
+.caixa1, .habilidades{
+    border-top: 1px solid #50fa7b;
+    border-left: 1px solid #50fa7b;
+    border-right: 1px solid #50fa7b;
+    border-radius: 10px;
+    border-bottom: 5px solid #50fa7b;
+}
+
+.card-border{
+    border-top: 1px solid #50fa7b;
+    border-left: 1px solid #50fa7b;
+    border-right: 1px solid #50fa7b;
+    border-radius: 10px;
+    border-bottom: 5px solid #50fa7b;
+}
+
+.cartao{
+    border-radius: 10px 10px 0 0;
+}
+
+.caixa1 img{
+    border: 2px solid #50fa7b
+}
+
+/* .caixa1 img{
+    width: 100px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+} */
+
+.info{
+    text-align: center;
+}
+
+/*FOOTER*/
+
+#contatos{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#contatos p{
+    font-size: 10px;
+}
+#contatos h3{
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+
+}
+
+.contatos{
+    margin-bottom: 10px;
+}
+
+.contatos ul li a{
+    text-decoration: none;
+    color: white;
+}
+.contatos ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 200px;
+}
+.contatos li, .contatos p{
+    text-align: left;
+    margin-right: 5px;
+
+    
+}
+#contatos .contatos li a img{
+    width: 45px;
+    padding: 5px;
+    /* filter: invert(100%); */
+    filter: invert(75%) sepia(43%) saturate(627%) hue-rotate(77deg) brightness(100%) contrast(102%);
+    
+
+}
+#contatos .contatos li a:hover{
+    
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+}
